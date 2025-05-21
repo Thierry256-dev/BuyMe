@@ -1,0 +1,281 @@
+body{
+  font-family: Roboto, Arial ;
+  background-image: linear-gradient(to bottom,rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(../images/sitelogo.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+}
+
+.head-section{
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  padding: 0px 9px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  align-items: center;
+  background: rgb(255, 166, 0);
+  color: rgb(0, 0, 0);
+  height: 55px;
+}
+.lef{
+  display: flex;
+}
+.left img{
+  width: 50px;
+}
+.middle{
+  display: flex;
+  font-size: 18px;
+}
+.right{
+  display: flex;
+  font-size: 18px;
+}
+
+h3{ 
+  text-align: center;
+  color: white;
+  margin-bottom: 5px;
+}
+p{
+  color: white;
+}
+
+.payment-options{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5px;
+  margin: 0px 20px;
+}
+
+.payment-options img{
+  border-radius: 30px;
+  cursor: pointer;
+  width: 150px;
+  transition: 0.3s;
+}
+
+.payment-options p{
+  text-align: center;
+  font-weight: 600;
+  color: rgb(245, 110, 0);
+  margin: 0;
+}
+
+.payment-options img:hover{
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.airtel{
+  background: hsl(0, 100%, 47%);
+}
+.active.airtel{
+  background: black;
+  color: white;
+}
+
+.momo{
+  background: hsl(51, 100%, 50%);
+}
+.active.momo{
+  background: black;
+  color: white;
+}
+
+.binance{
+  background: rgb(37, 37, 37);
+}
+.active.binance{
+  background: black;
+  color: white;
+}
+.para{
+  margin-top: 70px;
+}
+.location-section{
+  margin-top: 0px;
+}
+
+.location{
+  display: flex;
+  flex-direction: column;
+  padding: 0px 25px;
+  margin-top: 0px;
+  gap: 2px;  
+}
+input{
+  margin-bottom: 5px;
+  max-width: 600px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 19px;
+  padding: 0 5px;
+  border: 1px solid rgb(194, 194, 194);
+}
+select{
+  max-width: 610px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 19px;
+  padding: 0 5px;
+  border: 1px solid rgb(194, 194, 194);
+}
+option:hover{
+  background: gold;
+  font-weight: 600;
+}
+.location p{
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  text-align: center;
+}
+
+label{
+  font-size: 19px;
+  font-weight: 600;
+  color: rgb(163, 163, 163);
+}
+
+
+.mobile-pay{
+  display: none;
+  flex-direction: column;
+  padding: 15px 30px;
+  margin-bottom: 50px;
+}
+.binance-pay{
+  display: none;
+  flex-direction: column;
+  padding: 15px 30px;
+  margin-bottom: 50px;
+}
+.confirm-button{
+  margin: 20px 0px;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.confirm-button button{
+  font-size: 19px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: none;
+  background: rgb(0, 153, 255);
+  color: white;
+  font-weight: 550;
+  cursor: pointer;
+  transition: 0.3s;  
+}
+.wait{
+  display: none;
+  background: rgba(58, 58, 58, 0.856);
+  border-radius: 50%; 
+  padding: 20px;
+  text-align: center;
+}
+.confirm-button button:hover{
+  background: rgb(221, 221, 221);
+  color: rgb(0, 153, 255);
+}
+.confirm-button button:active{
+  color: black;
+}
+
+.track-order{
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+.main-content{
+  transition: filter 0.3s ease;
+}
+.blur{
+  filter: blur(5px);
+}
+.background{
+  background: rgb(0, 0, 0);
+}
+#customAlert{
+  display: none;
+  position: fixed;
+  top: 40%;
+  left: 20%;
+  right: 20%;  
+  background: #adadade0;   
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+#customAlert p{
+  color: #333333;
+  font-size: 17px;
+  font-weight: 550;
+  margin: 0px;
+  text-align: center;
+}
+.bt{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.warning h3{
+  margin-top: 0px;
+  color: rgb(182, 4, 4);
+}
+#customAlert button{ 
+  border: none;
+  background: rgb(0, 110, 255);
+  font-size: 17px;
+  color: white;
+  font-weight: 600;
+  padding: 5px 15px;
+  border-radius: 10px; 
+  margin-top: 3px;
+}
+
+@media(min-width: 770px){
+  .location-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .pay-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  } 
+}
+
+@media(max-width: 768px){
+  body{
+    font-family: Roboto, Arial ;
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(../images/sitelogo.jpg);
+    background-size:contain;
+    background-repeat: repeat;
+    background-position: center;
+  }
+  .payment-options img{
+    width: 95px;
+  }
+  .payment-options{
+    font-size: 16px;
+  }
+  h3{
+    font-size: 18px;
+  }
+  label{
+    font-size: 16px;
+  }
+}
