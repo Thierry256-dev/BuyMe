@@ -289,7 +289,9 @@ hr{
 .price{
   color: rgb(146, 0, 0);
 }
-
+.qty{
+  color: black;
+}
 .quantity{
   width: 30px;
   height: 20px;
