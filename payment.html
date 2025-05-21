@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BuyMe-Payment</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="styles/payment.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  </head>
+  <body class="body1">
+    <div class=" head-section">
+      <div class="left">
+        <a href="index.html"><img src="images/Site-logo-nobackground.png" alt=""></a>
+      </div>
+      <div class="middle">
+        Payment
+      </div>
+      <div class="right">
+        <h3 class="track-order">Track Order</h3>
+        <div class=""></div>
+      </div>
+    </div>
+   <div class="main-content">  
+    
+    <h3 class="para">Shipping Location</h3>
+    <div class="location-section">     
+      <div class="location">
+        <label for="country">Country</label>
+        <select name="" id="country">
+          <option value="" disabled selected>Please Select a Country</option>
+          <option value="">Uganda</option>
+          <option value="">Kenya</option>
+          <option value="">Tanzania</option>
+          <option value="">Rwanda</option>
+        </select>
+        <label for="city">City</label>
+        <input type="text" id="city">
+        <label for="street">Street</label>
+        <input type="text" id="street">
+        <label for="code">Postal Code</label>
+        <input type="text" id="code">
+        <label for="contact">Contact</label>
+        <input type="text" name="" id="contact" placeholder="+256700000001">
+        <label for="email">Email</label>
+        <input type="text" placeholder="buyme01@gmail.com">
+      </div>       
+    </div>      
+    
+    <div>
+      <h3>Choose Payment Method</h3>
+    </div>
+    <div class="payment-options">      
+    </div>
+   <div class="pay-details">
+    <div class="mobile-pay" id="1">
+      <label for="name">Name</label>
+      <input type="text" placeholder="Name Registered On Your Number" id="name">
+      <label for="number">Number Used For Payment</label>
+      <input type="text" placeholder="+256700000001" id="number">
+      <label for="code">Payment Code</label>
+      <select name="" id="code">
+        <option value="" disabled selected>Select Payment Code Respectively</option>
+        <optgroup label="Airtel Uganda">
+          <option value="">10574321</option>
+        <optgroup label="MTN Uganda"> 
+          <option value="">3421865</option> 
+        <optgroup label="Airtel Rwanda">
+          <option value="">00574321</option>
+        <optgroup label="MTN Rwanda">
+          <option value="">80574322</option>
+        <optgroup label="MTN Kenya">
+          <option value="">10004301</option>
+        <optgroup label="MTN Tanzania">
+          <option value="">00514741</option>
+      </select>
+      <label for="transaction">TransactionId</label>
+      <input type="text" id="transaction" placeholder="Enter valid Transaction Id">
+    </div>
+   
+    <div class="binance-pay" id="3">
+      <label for="currency">Crypto Currency</label>
+      <input type="text" id="currency" readonly value="USDT">        
+      <label for="address">Recieving Wallet Address</label>
+      <select type="text" id="number">
+        <option value="" disabled selected>Pay to respective Address</option>
+        <optgroup label="BNB Smart Chain Network(BEP20)">
+         <option value="">ewfyt6453fsawqtipoghfrres7</option>
+        <optgroup label="Ethereum Network(ERC20)">
+         <option value="">gfdaewqyioufgfcds98trfcxe4</option>
+        <optgroup label="opBNB Network"> 
+          <option value="">fdsaewrfcdshjkhy5ffssfcea</option>
+        <optgroup label="Arbitrum One Network">  
+          <option value="">cfdsawqerrtcsadhkoyt67g4f</option>
+      </select>
+      <label for="transaction">TransactionId</label>
+      <input type="text" id="transaction" placeholder="Enter valid Transaction Id">
+      <p>Note: Funds from Faucet Accounts Are not Allowed and therefore will be lost if sent</p> 
+    </div>
+   </div>
+
+    <div class="confirm-button">
+      <p class="wait">You will recieve a notification shortly upon confirming your payment</p>
+      <button id="submit">Submit</button>      
+    </div>
+   </div>
+
+    <div id="customAlert">
+      <div class="warning">
+        <h3>Warning!!</h3>
+      </div>
+      <div>
+        <p>This is not an official site, any payments made will be lost!</p>
+      </div>
+      <div class="bt">
+        <button id="ok">OK</button>        
+      </div>
+    </div>
+    
+    <script src="scripts/payment.js" type="module"></script>
+  </body> 
+</html>

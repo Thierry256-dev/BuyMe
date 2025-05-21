@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>BuyMe</title>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+      <link rel="icon" type="image/png" href="images/favicon.png">     
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">  
+      
+      <link rel="stylesheet" href="styles/search.css">
+      <link rel="stylesheet" href="styles/landing.css">
+      <link rel="stylesheet" href="styles/buyme.css">
+    </head>
+    <body>
+      <div class="head">
+        <div class="header-section">
+          <div class="header-left">
+            <img src="images/sitelogo.jpg" alt="sitelogo" class="site">
+          </div>
+          <div class="header-middle">
+            <input type="text" placeholder="Search" id="searchBox">
+            <img src="images/icons/search-icon.png" alt="search-icon" class="search-icon">
+          </div>
+          <div class="header-right">
+            <div>
+              <h4 id="shop">ShopNow</h4>
+            </div>             
+            
+            <a href="checkout.html"><div class="cart-section">
+              <div style="position: relative;">
+                <img src="images/icons/cart-icon.png" alt="cart-icon" class="cart-icon">
+                <h3 class="cart-count js-cart-count"></h3>
+              </div>
+              <div style="color: white;">
+                Cart
+              </div> 
+            </div></a>
+          </div>
+        </div>     
+        <div class="below-header">                          
+          <h3>Welcome To BuyMe.com</h3>                       
+          <button class="bckbtn">Back</button>             
+          <hr>            
+        </div> 
+        <div class="category-buttons">        
+        </div> 
+      </div>
+
+      <div class="landing-view">
+        <div class="first-two">
+          <div class="landing-1"> 
+            <div class="slide" id="Fashion" onclick="handleCategory(this.id)">
+              <img src="images/Landing/61R7G24e7dL._SR855,1320_.jpg" alt="">
+              <h2 class="sharp">Start Looking Sharp</h2>
+            </div>        
+            <div class="slide" id="beauty" onclick="handleCategory(this.id)">
+              <img src="images/Landing/beauty.jpg" alt="">
+              <h2 class="sharp">All Things Beauty</h2>
+            </div>      
+            <div class="slide" id="kitchen" onclick="handleCategory(this.id)">
+              <img src="images/Landing/must-have.jpg" alt="">
+              <h2 class="sharp">Kitchen Must-Haves</h2>
+            </div>            
+          </div>
+    
+         <div class="container-1">
+          <p for="" class="cat-heading">Explore our Electronic World</p>
+          <div class="landing-2" id="lnd-1">
+            <div class="elect" id="gaming" onclick="handleCategory(this.id)">
+              <img src="images/Landing/controller.jpg" alt="">
+              <p class="section-name">Gaming</p>
+            </div>
+            <div class="elect" id="computers" onclick="handleCategory(this.id)">
+              <img src="images/Landing/laptop.jpg" alt="">
+              <p class="section-name">laptops & PCs</p>
+            </div>
+            <div class="elect" id="speakers" onclick="handleCategory(this.id)">
+              <img src="images/Landing/speaker.jpg" alt="">
+              <p class="section-name">Speakers</p>
+            </div>
+            <div class="elect" id="screens" onclick="handleCategory(this.id)">
+              <img src="images/Landing/Tv.jpg" alt="">
+              <p class="section-name">Tvs & Monitors</p>
+            </div>
+          </div>
+         </div>
+        </div>
+  
+       <div class="container-2">
+        <p for="" class="cat-heading" id="smart">Look Smart</p>
+        <div class="landing-2" id="lnd-2">
+          <div class="elect" id="shoes" onclick="handleCategory(this.id)">
+            <img src="images/Landing/Shoes.jpg" alt="">
+            <p class="section-name">Shoes</p>
+          </div>
+          <div class="elect" id="watches" onclick="handleCategory(this.id)">
+            <img src="images/Landing/Watches.jpg" alt="">
+            <p class="section-name">Watches</p>
+          </div>
+          <div class="elect" id="clothing" onclick="handleCategory(this.id)">
+            <img src="images/Landing/Clothing.jpg" alt="">
+            <p class="section-name">Clothing</p>
+          </div>
+          <div class="elect" id="wrist-wear" onclick="handleCategory(this.id)">
+            <img src="images/Landing/Bracelets.jpg" alt="">
+            <p class="section-name">Bracelets & Necklaces</p>
+          </div>
+        </div>
+       </div> 
+  
+       <div class="container-3">
+        <p for="" class="cat-heading">Unveil your radiance</p>
+        <div class="landing-2" id="lnd-3">
+          <div class="elect" id="fragrance" onclick="handleCategory(this.id)">
+            <img src="images/Landing/Fragrance.jpg" alt="">
+            <p class="section-name">Fragrance</p>
+          </div>
+          <div class="elect" id="skincare" onclick="handleCategory(this.id)">
+            <img src="images/Landing/Skincare.jpg" alt="">
+            <p class="section-name">Skincare</p>
+          </div>
+          <div class="elect" id="makeup" onclick="handleCategory(this.id)">
+            <img src="images/Landing/Makeup.jpg" alt="">
+            <p class="section-name">Makeup</p>
+          </div>
+          <div class="elect" id="haircare" onclick="handleCategory(this.id)">
+            <img src="images/Landing/Haircare.jpg" alt="">
+            <p class="section-name">Haircare</p>
+          </div>
+        </div>
+       </div>
+  
+       <div class="middle-two">
+        <div class="container-4" id="phones">
+          <p for="" class="cat-heading">Level Up your SmartPhone</p>
+          <div class="landing-1-1">
+            <div class="slide" id="iphone" onclick="handleCategory(this.id)">
+              <img src="images/Landing/Iphone.jpg" alt="">
+              <p class="section-name-p">iPhone</p>
+            </div>
+            <div class="slide" id="samsung" onclick="handleCategory(this.id)">
+              <img src="images/Landing/Samsung.jpg" alt="">
+              <p class="section-name-p">SamSung</p>
+            </div>
+            <div class="slide" id="google-pixel" onclick="handleCategory(this.id)">
+              <img src="images/Landing/Pixel.jpg" alt="">
+              <p class="section-name-p">Google Pixel</p>
+            </div>
+            <div class="slide" id="others" onclick="handleCategory(this.id)">
+              <img src="images/Landing/Others.jpg" alt="">
+              <p class="section-name-p">Others</p>
+            </div>
+          </div>
+         </div>
+    
+          <div class="container-5">
+            <p for="" class="cat-heading">Top Deals</p>
+          <div class="landing-2" id="lnd-4">
+            <div class="elect" id="ear-buds" onclick="handleCategory(this.id)">
+              <img src="images/Landing/Airpods.jpg" alt="">
+              <p class="section-name">Ear Buds</p>
+            </div>
+            <div class="elect" id="headphones" onclick="handleCategory(this.id)">
+              <img src="images/Landing/Headphones.jpg" alt="">
+              <p class="section-name">HeadPhones</p>
+            </div>
+            <div class="elect" id="charger" onclick="handleCategory(this.id)">
+              <img src="images/Landing/Chargers.jpg" alt="">
+              <p class="section-name">All Chargers</p>
+            </div>
+            <div class="elect" id="extras" onclick="handleCategory(this.id)">
+              <img src="images/Landing/Extras.jpg" alt="">
+              <p class="section-name">Extras</p>
+            </div>
+          </div>
+          </div>
+       </div>
+  
+       <div class="last-two">
+        <div class="container-6">
+          <p for="" class="cat-heading">Carry Your Luggage Easily</p>
+        <div class="landing-2" id="luggage">
+          <div class="elect"  id="suitcase" onclick="handleCategory(this.id)">
+            <img src="images/Landing/Suitcase.jpg" alt="">          
+          </div>
+          <div class="elect" id="bag" onclick="handleCategory(this.id)">
+            <img src="images/Landing/Bags.jpg" alt="">
+            <p class="section-name">Bags</p>
+          </div>
+          <div class="elect" id="cross-bag" onclick="handleCategory(this.id)">
+            <img src="images/Landing/Cross-bag.jpg" alt="">
+            <p class="section-name">Cross bags</p>
+          </div>       
+        </div>
+        </div>
+
+       <div class="container-7">
+        <div class="elect-1" id="photo" onclick="handleCategory(this.id)">
+          <img src="images/Landing/Photography.jpg" alt="">
+          <p class="section-name-photography">Elevate Your Photography</p>
+        </div>
+       </div>
+       </div>
+      </div>    
+         
+      <div id="productList" class="product-list"></div>
+      <div class="products-container js-products-container">                
+      </div>
+
+      <div class="footer-section">
+        <div class="contact-info">
+          <h2>Contact Info</h2>
+          Tel: +256702792026 / +250795751685 <br>
+          Email: thierrymunderi@gmali.com <br>
+        </div>
+        <div class="developer">Developer: <span>Thierry</span></div>
+        <div>&copy;2025 BuyMe.com. All Rights Reserved</div>
+      </div>
+
+
+
+      <script src="scripts/buyme.js" type="module"></script>
+      <script src="scripts/fuse.min.js"></script>
+    </body>
+  </html>

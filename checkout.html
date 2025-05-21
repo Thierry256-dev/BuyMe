@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BuyMe-Checkout</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="styles/checkout.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="head">
+      <div class="left">
+        <a href="index.html"><img src="images/Site-logo-nobackground.png" alt=""></a>
+      </div>
+      <div class="middle">
+        Checkout(<span class="items-counter js-cart-count"></span>)
+      </div>
+      <div class="right"><button class="clear-cart-btn">Clear Cart</button></div>
+    </div>
+    
+    <div class="checkout">
+      <div class="order-summary">
+        <div class="cart-message">
+          <h3>Order Summary</h3>
+        </div>
+        <div class="order-details">                  
+        </div>
+      </div>
+      <div class="payment-summary">
+        <div>
+          <h3>Payment Summary</h3>
+          <hr>
+        </div>
+        <div class="amount-section">         
+        </div>
+        <div class="order-btn-div">
+          <a href="payment.html"><button class="order-button">Click to Make Order</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="message">
+       <p>YOU HAVE NO ITEMS IN YOUR CART!!</p>
+       <img src=images/sad.jpg>
+    </div>
+  </body>
+
+  <script src="scripts/dayjs.min.js"></script>
+  <script src="scripts/checkout.js" type="module"></script>
+</html>
