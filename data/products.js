@@ -868,7 +868,7 @@ export const products = [
   },{
     id: '3r45dad4wft',
     image: 'Galaxy-Tap-A9-8.7-Inch-4GB-RAM-64GB-ROM',
-    name: 'Galaxy Tap A9 8.7-Inch 4GB-RAM 64GB-ROM',
+    name: 'Galaxy Tab A9 8.7-Inch 4GB-RAM 64GB-ROM',
     rating: 45,
     priceCents: 13500,
     category: 'Phones',
